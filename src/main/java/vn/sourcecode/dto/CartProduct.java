@@ -11,7 +11,7 @@ public class CartProduct {
 	private String avatar;
 
 	public BigDecimal totalPrice() {
-		return this.price.add(new BigDecimal(this.quantity.toString()));
+		return this.price.multiply(new BigDecimal(this.quantity.toString()));
 	}
 
 	public CartProduct() {
