@@ -15,7 +15,7 @@ public class MvcConfigurer implements WebMvcConfigurer , JwConstants  {
 	
 	@Bean
 	public ViewResolver viewResolver() {
-		//Xu ly va tra ve doi tuong view thong qua ten
+		//Xu ly va tra ve doi tuong view thong qua name
 		InternalResourceViewResolver bean = new InternalResourceViewResolver();
 		bean.setViewClass(JstlView.class);
 		bean.setPrefix("/WEB-INF/views/");
